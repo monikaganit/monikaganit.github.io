@@ -2,247 +2,198 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Monika</title>
+  <title>Monika | Mathematics</title>
   <style>
     body {
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.6;
-      color: #222;
-      background: #ffffff;
+      color: #111;
+      background: #fff;
     }
 
-    header {
+    .page {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 300px;
+      background: #f3f7fb;
+      padding: 35px 25px;
       text-align: center;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar img {
+      width: 250px;
+      max-width: 100%;
+      border: 1px solid #ddd;
       margin-bottom: 25px;
     }
 
-    h1 {
-      font-size: 38px;
-      margin-bottom: 5px;
-      font-weight: normal;
+    .sidebar h1 {
+      color: #003078;
+      font-size: 40px;
+      margin: 10px 0;
+    }
+
+    .sidebar p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 8px;
+      color: #003078;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .content {
+      flex: 1;
+      padding: 25px 50px;
+      max-width: 900px;
     }
 
     nav {
-      text-align: center;
-      margin: 20px 0 35px 0;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
-      padding: 12px 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
     }
 
     nav a {
-      margin: 0 12px;
+      margin-right: 24px;
       text-decoration: none;
-      color: #2b5daa;
-      font-size: 16px;
+      color: #111;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #003078;
     }
 
     h2 {
-      margin-top: 35px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 4px;
-      font-weight: normal;
+      color: #003078;
+      font-size: 28px;
+      margin-top: 25px;
     }
 
-    a {
-      color: #2b5daa;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .subtitle {
-      color: #555;
-      font-size: 18px;
+    p, li {
+      font-size: 17px;
+      line-height: 1.6;
     }
 
     footer {
       margin-top: 50px;
-      padding-top: 15px;
       border-top: 1px solid #ddd;
-      text-align: center;
-      color: #777;
+      padding-top: 15px;
+      color: #555;
       font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .page {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: auto;
+      }
+      .content {
+        padding: 25px;
+      }
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Monika</h1>
-  <div class="subtitle">Assistant Professor of Mathematics</div>
-  <div>Hampton University</div>
-</header>
+<div class="page">
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#publications">Publications</a>
-  <a href="#talks">Talks</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#service">Service</a>
-  <a href="#cv">CV</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <aside class="sidebar">
+    <img src="profile.jpg" alt="Monika">
 
-<section id="about">
-  <h2>About me</h2>
-  <p>
-    I am an Assistant Professor of Mathematics at Hampton University.
-    My research interests lie in functional analysis and operator theory,
-    with a focus on Banach space geometry, numerical index theory,
-    Bishop–Phelps–Bollobás type properties, tensor product spaces,
-    and related questions in operator theory.
-  </p>
+    <h1>Monika</h1>
 
-  <h2>Education</h2>
-  <p>
-    I completed my Ph.D. in Mathematics at the University of Memphis under the guidance
-    of Fernanda Botelho and Bentuo Zheng. I received my Master of Science in Mathematics
-    from the Indian Institute of Technology Bombay and my undergraduate degree in
-    Mathematics from Delhi University.
-  </p>
+    <p>
+      Assistant Professor of Mathematics<br>
+      Hampton University
+    </p>
 
-  <h2>Research</h2>
-  <p>
-    My research lies at the intersection of functional analysis, operator theory,
-    and the geometry of Banach spaces. I am particularly interested in numerical index
-    theory, Bishop–Phelps–Bollobás type properties, quotient lifting properties,
-    tensor product spaces, and algebraic and spectral properties of operators.
-  </p>
-</section>
+    <hr>
 
-<section id="publications">
-  <h2>Publications and preprints</h2>
-  <ol>
-    <li>
-      <b>Monika</b>, Tattwamasi Amrutam, Priyadarshi Dey,
-      <a href="https://arxiv.org/abs/2603.21311">
-        <i>On the Convergence of Numerical Index via Operator Openings and Ultraproducts</i>
-      </a>, preprint, 2026.
-    </li>
+    <p>
+      <a href="mailto:monika.ganit@gmail.com">monika.ganit@gmail.com</a>
+    </p>
 
-    <li>
-      <b>Monika</b>, Priyadarshi Dey, Zachary Easley,
-      <a href="https://arxiv.org/abs/2512.22497">
-        <i>Projections in the Algebra Generated by an n-Potent Operator</i>
-      </a>, preprint, 2025.
-    </li>
+    <p>
+      Department of Mathematics<br>
+      Hampton University
+    </p>
 
-    <li>
-      <b>Monika</b>, Bentuo Zheng,
-      <a href="https://doi.org/10.1080/03081087.2022.2043818">
-        <i>The numerical index of ℓp²</i>
-      </a>, Linear and Multilinear Algebra, 2022.
-    </li>
+    <hr>
 
-    <li>
-      <b>Monika</b>, Fernanda Botelho, Richard Fleming,
-      <a href="https://rdcu.be/cuKHY">
-        <i>The Existence of Linear Selection and the Quotient Lifting Property</i>
-      </a>, Indian Journal of Pure and Applied Mathematics, 2021.
-    </li>
+    <h3>Links</h3>
+    <div class="social">
+      <a href="#" target="_blank">ORCID</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">ResearchGate</a>
+      <a href="#" target="_blank">Google Scholar</a>
+    </div>
+  </aside>
 
-    <li>
-      <b>Monika</b>, D. C. Cadavid, B. Zheng,
-      <a href="https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society/article/abs/maximal-ideal-in-the-space-of-operators-on-boldsymbol-sum-ell-qc0/857EC316F793B5C05BDDC9620F50F4AC">
-        <i>The maximal ideal in the operators on (Σℓq)c₀</i>
-      </a>, Bulletin of the Australian Mathematical Society, 2022.
-    </li>
+  <main class="content">
 
-    <li>
-      <b>Monika</b>, T. S. S. R. K. Rao,
-      <i>Quotients of tensor product spaces</i>,
-      Contemporary Mathematics 737, American Mathematical Society, 125–134, 2019.
-    </li>
-  </ol>
-</section>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="service.html">Service</a>
+      <a href="cv.pdf">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-<section id="talks">
-  <h2>Selected talks</h2>
-  <ul>
-    <li>Numerical Index of Banach Spaces, Dean's Colloquium, Hampton University, 2025.</li>
-    <li>Numerical Index of Banach Spaces, Mathematics Seminar, Hampton University, 2025.</li>
-    <li>The Quotient Lifting Property, Joint Mathematics Meetings, San Francisco, 2024.</li>
-    <li>Numerical Index of Banach Spaces, ACC Seminar, Stevens Institute of Technology, 2022.</li>
-    <li>Numerical Index of Banach Spaces, Women in Operator Theory, University of Memphis, 2022.</li>
-    <li>
-      <a href="https://youtu.be/CroOB4Jtb24">Numerical Index of Banach Spaces</a>,
-      RKMVERI, Kolkata, India, 2021.
-    </li>
-    <li>When are tensor products good with subspaces and quotients?, IWOTA, Lisbon, 2019.</li>
-  </ul>
-</section>
+    <h2>Welcome</h2>
 
-<section id="teaching">
-  <h2>Teaching</h2>
+    <p>
+      I am an Assistant Professor of Mathematics at Hampton University.
+      My research interests lie in Functional Analysis and Operator Theory,
+      with particular emphasis on Banach space geometry, numerical index theory,
+      Bishop–Phelps–Bollobás type properties, tensor product spaces, and related
+      questions in operator theory.
+    </p>
 
-  <p><b>Hampton University</b></p>
-  <ul>
-    <li>MAT 117: Precalculus I</li>
-    <li>MAT 330: Complex Variables</li>
-    <li>MAT 417: Foundations of Analysis II</li>
-    <li>MAT 427/428: Senior Thesis I and II</li>
-    <li>MAT 504: Advanced Topics in Linear Algebra</li>
-  </ul>
+    <h2>Research Interests</h2>
 
-  <p><b>Stevens Institute of Technology</b></p>
-  <ul>
-    <li>Integral Calculus</li>
-    <li>Multivariable Calculus</li>
-    <li>Infinite Series</li>
-    <li>Vectors and Matrices</li>
-    <li>Nonlinear Optimization</li>
-  </ul>
+    <ul>
+      <li>Functional Analysis</li>
+      <li>Operator Theory</li>
+      <li>Banach Space Geometry</li>
+      <li>Numerical Index Theory</li>
+      <li>Bishop–Phelps–Bollobás Properties</li>
+      <li>Tensor Product Spaces</li>
+    </ul>
 
-  <p><b>University of Memphis</b></p>
-  <ul>
-    <li>Calculus I</li>
-    <li>College Algebra</li>
-    <li>Trigonometry</li>
-    <li>Elementary Calculus</li>
-    <li>Ordinary Differential Equations</li>
-  </ul>
-</section>
+    <h2>News</h2>
 
-<section id="service">
-  <h2>Service and mentorship</h2>
-  <ul>
-    <li>Math Club Faculty Advisor, Hampton University.</li>
-    <li>Department Assessment Facilitator, Hampton University.</li>
-    <li>Graduate Curriculum Committee, Hampton University.</li>
-    <li>Long Range Planning Committee, Hampton University.</li>
-    <li>Undergraduate Research Supervisor, Hampton University.</li>
-    <li>Graduate Student Mentor, University of Memphis, NSF PSUM Program.</li>
-  </ul>
-</section>
+    <ul>
+      <li>Fall 2025: Serving as Math Club Faculty Advisor and member of several departmental committees.</li>
+      <li>2026: New preprint on numerical index, operator openings, and ultraproducts.</li>
+    </ul>
 
-<section id="cv">
-  <h2>CV</h2>
-  <p>
-    A current version of my CV will be available here soon.
-  </p>
-</section>
+    <footer>
+      © 2026 Monika
+    </footer>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>
-    Department of Mathematics<br>
-    Hampton University
-  </p>
-  <p>
-    Email: <a href="mailto:monika.ganit@gmail.com">monika.ganit@gmail.com</a>
-  </p>
-</section>
+  </main>
 
-<footer>
-  Monika • 2026
-</footer>
+</div>
 
 </body>
 </html>
