@@ -1,58 +1,90 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>About | Monika</title>
-  <style>
-    body { max-width: 850px; margin: 40px auto; padding: 0 20px; font-family: Georgia, serif; line-height: 1.6; }
-    nav { border-bottom: 1px solid #ccc; padding-bottom: 12px; margin-bottom: 30px; }
-    nav a { margin-right: 20px; text-decoration: none; color: #111; font-weight: bold; }
-    h1, h2 { color: #003078; }
-  </style>
+    <meta charset="UTF-8">
+    <title>About | Monika</title>
+
+    <style>
+        body {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: Georgia, serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            border-bottom: 2px solid #d0d8e8;
+            padding-bottom: 18px;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            margin-right: 22px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #003078;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #0055cc;
+        }
+
+        nav a.active {
+            font-weight: bold;
+            border-bottom: 2px solid #003078;
+            padding-bottom: 3px;
+        }
+
+        h1,
+        h2 {
+            color: #003078;
+        }
+
+        p,
+        li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+    </style>
+
 </head>
+
 <body>
 
-nav {
-    border-bottom: 2px solid #d0d8e8;
-    padding-bottom: 18px;
-    margin-bottom: 40px;
-}
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="talks.html">Talks</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="service.html">Service</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-nav a {
-    margin-right: 22px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #003078;
-    font-size: 18px;
-}
+    <h1>About</h1>
 
-nav a:hover {
-    color: #0055cc;
-}
+    <p>
+        I am an Assistant Professor of Mathematics at Hampton University.
+        My research interests lie in Functional Analysis and Operator Theory,
+        with particular emphasis on Banach space geometry, numerical index theory,
+        Bishop–Phelps–Bollobás type properties, tensor product spaces, and related
+        questions in operator theory.
+    </p>
 
-nav a.active {
-    font-weight: bold;
-    border-bottom: 2px solid #003078;
-    padding-bottom: 3px;
-}
+    <h2>Education</h2>
 
-<h1>About</h1>
-
-<p>
-I am an Assistant Professor of Mathematics at Hampton University.
-My research interests lie in Functional Analysis and Operator Theory,
-with particular emphasis on Banach space geometry, numerical index theory,
-Bishop–Phelps–Bollobás type properties, tensor product spaces, and related
-questions in operator theory.
-</p>
-
-<h2>Education</h2>
-
-<ul>
-  <li>Ph.D. in Mathematics, University of Memphis</li>
-  <li>M.Sc. in Mathematics, Indian Institute of Technology Bombay</li>
-  <li>Undergraduate Degree in Mathematics, Delhi University</li>
-</ul>
+    <ul>
+        <li>Ph.D. in Mathematics, University of Memphis</li>
+        <li>M.Sc. in Mathematics, Indian Institute of Technology Bombay</li>
+        <li>B.Sc. in Mathematics, University of Delhi</li>
+    </ul>
 
 </body>
+
 </html>
+```
