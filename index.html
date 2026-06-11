@@ -1,199 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Monika | Mathematics</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      color: #111;
-      background: #fff;
-    }
+    <meta charset="UTF-8">
+    <title>Monika | Mathematics</title>
 
-    .page {
-      display: flex;
-      min-height: 100vh;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            color: #111;
+            background: #ffffff;
+        }
 
-    .sidebar {
-      width: 300px;
-      background: #f3f7fb;
-      padding: 35px 25px;
-      text-align: center;
-      border-right: 1px solid #ddd;
-    }
+        .page {
+            display: flex;
+            min-height: 100vh;
+        }
 
-    .sidebar img {
-      width: 250px;
-      max-width: 100%;
-      border: 1px solid #ddd;
-      margin-bottom: 25px;
-    }
+        .sidebar {
+            width: 320px;
+            background: #f5f8fc;
+            padding: 40px 30px;
+            text-align: center;
+            border-right: 1px solid #dcdcdc;
+        }
 
-    .sidebar h1 {
-      color: #003078;
-      font-size: 40px;
-      margin: 10px 0;
-    }
+        .sidebar img {
+            width: 240px;
+            max-width: 100%;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            margin-bottom: 25px;
+        }
 
-    .sidebar p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
+        .sidebar h1 {
+            color: #003078;
+            margin-bottom: 10px;
+            font-size: 42px;
+        }
 
-    .social a {
-      display: inline-block;
-      margin: 8px;
-      color: #003078;
-      font-weight: bold;
-      text-decoration: none;
-    }
+        .sidebar p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
 
-    .content {
-      flex: 1;
-      padding: 25px 50px;
-      max-width: 900px;
-    }
+        .social {
+            margin-top: 25px;
+        }
 
-    nav {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 12px;
-      margin-bottom: 30px;
-    }
+        .social a {
+            display: inline-block;
+            margin: 8px;
+            color: #003078;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    nav a {
-      margin-right: 24px;
-      text-decoration: none;
-      color: #111;
-      font-weight: bold;
-    }
+        .social a:hover {
+            color: #0055cc;
+        }
 
-    nav a:hover {
-      color: #003078;
-    }
+        .content {
+            flex: 1;
+            padding: 35px 50px;
+            max-width: 950px;
+        }
 
-    h2 {
-      color: #003078;
-      font-size: 28px;
-      margin-top: 25px;
-    }
+        nav {
+            border-bottom: 2px solid #d0d8e8;
+            padding-bottom: 18px;
+            margin-bottom: 40px;
+        }
 
-    p, li {
-      font-size: 17px;
-      line-height: 1.6;
-    }
+        nav a {
+            margin-right: 28px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #003078;
+            font-size: 22px;
+            transition: all 0.2s ease;
+        }
 
-    footer {
-      margin-top: 50px;
-      border-top: 1px solid #ddd;
-      padding-top: 15px;
-      color: #555;
-      font-size: 14px;
-    }
+        nav a:hover {
+            color: #0055cc;
+            transform: scale(1.08);
+        }
 
-    @media (max-width: 800px) {
-      .page {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: auto;
-      }
-      .content {
-        padding: 25px;
-      }
-      nav a {
-        display: inline-block;
-        margin: 8px;
-      }
-    }
-  </style>
+        nav a.active {
+            font-size: 28px;
+            color: #003078;
+            font-weight: bold;
+            border-bottom: 3px solid #003078;
+            padding-bottom: 4px;
+        }
+
+        h2 {
+            color: #003078;
+            font-size: 32px;
+            margin-top: 20px;
+        }
+
+        p,
+        li {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        footer {
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            color: #666;
+            font-size: 15px;
+        }
+
+        @media (max-width: 900px) {
+            .page {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: auto;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+                font-size: 18px;
+            }
+
+            nav a.active {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="page">
+    <div class="page">
 
-  <aside class="sidebar">
-    <img src="profile.jpg" alt="Monika">
+        <aside class="sidebar">
 
-    <h1>Monika</h1>
+            <img src="profile.jpg" alt="Monika">
 
-    <p>
-      Assistant Professor of Mathematics<br>
-      Hampton University
-    </p>
+            <h1>Monika</h1>
 
-    <hr>
+            <p>
+                Assistant Professor of Mathematics<br>
+                Hampton University
+            </p>
 
-    <p>
-      <a href="mailto:monika.ganit@gmail.com">monika.ganit@gmail.com</a>
-    </p>
+            <p>
+                Functional Analysis<br>
+                Operator Theory
+            </p>
 
-    <p>
-      Department of Mathematics<br>
-      Hampton University
-    </p>
+            <p>
+                <a href="mailto:monika.ganit@gmail.com">
+                    monika.ganit@gmail.com
+                </a>
+            </p>
 
-    <hr>
+            <div class="social">
+                <a href="#" target="_blank">ORCID</a><br>
+                <a href="#" target="_blank">Google Scholar</a><br>
+                <a href="#" target="_blank">ResearchGate</a><br>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
 
-    <h3>Links</h3>
-    <div class="social">
-      <a href="#" target="_blank">ORCID</a>
-      <a href="#" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">ResearchGate</a>
-      <a href="#" target="_blank">Google Scholar</a>
+        </aside>
+
+        <main class="content">
+
+            <nav>
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="publications.html">Publications</a>
+                <a href="talks.html">Talks</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="service.html">Service</a>
+                <a href="cv.html">CV</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <h2>Welcome</h2>
+
+            <p>
+                I am an Assistant Professor of Mathematics in the Department of
+                Mathematics at Hampton University.
+            </p>
+
+            <p>
+                My research interests lie in functional analysis and operator
+                theory, with a focus on Banach space geometry, numerical index
+                theory, Bishop–Phelps–Bollobás type properties, tensor product
+                spaces, and related problems in operator theory.
+            </p>
+
+            <h2>Research Interests</h2>
+
+            <ul>
+                <li>Functional Analysis</li>
+                <li>Operator Theory</li>
+                <li>Banach Space Geometry</li>
+                <li>Numerical Index Theory</li>
+                <li>Bishop–Phelps–Bollobás Properties</li>
+                <li>Tensor Product Spaces</li>
+            </ul>
+
+            <h2>Education</h2>
+
+            <ul>
+                <li>
+                    Ph.D. in Mathematics,
+                    University of Memphis
+                </li>
+
+                <li>
+                    M.Sc. in Mathematics,
+                    Indian Institute of Technology Bombay
+                </li>
+
+                <li>
+                    B.Sc. in Mathematics,
+                    University of Delhi
+                </li>
+            </ul>
+
+            <h2>Recent News</h2>
+
+            <ul>
+                <li>
+                    Ongoing work on numerical index theory and ultraproducts.
+                </li>
+
+                <li>
+                    Ongoing collaboration on algebraic properties of n-potent operators.
+                </li>
+
+                <li>
+                    Faculty advisor for the Math Club at Hampton University.
+                </li>
+            </ul>
+
+            <footer>
+                © 2026 Monika
+            </footer>
+
+        </main>
+
     </div>
-  </aside>
-
-  <main class="content">
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="publications.html">Publications</a>
-      <a href="talks.html">Talks</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="service.html">Service</a>
-      <a href="cv.html">CV</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <h2>Welcome</h2>
-
-    <p>
-      I am an Assistant Professor of Mathematics at Hampton University.
-      My research interests lie in Functional Analysis and Operator Theory,
-      with particular emphasis on Banach space geometry, numerical index theory,
-      Bishop–Phelps–Bollobás type properties, tensor product spaces, and related
-      questions in operator theory.
-    </p>
-
-    <h2>Research Interests</h2>
-
-    <ul>
-      <li>Functional Analysis</li>
-      <li>Operator Theory</li>
-      <li>Banach Space Geometry</li>
-      <li>Numerical Index Theory</li>
-      <li>Bishop–Phelps–Bollobás Properties</li>
-      <li>Tensor Product Spaces</li>
-    </ul>
-
-    <h2>News</h2>
-
-    <ul>
-      <li>Fall 2025: Serving as Math Club Faculty Advisor and member of several departmental committees.</li>
-      <li>2026: New preprint on numerical index, operator openings, and ultraproducts.</li>
-    </ul>
-
-    <footer>
-      © 2026 Monika
-    </footer>
-
-  </main>
-
-</div>
 
 </body>
+
 </html>
