@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,15 +20,16 @@
         }
 
         .sidebar {
-            width: 320px;
+            width: 340px;
             background: #f5f8fc;
             padding: 40px 30px;
             text-align: center;
             border-right: 1px solid #dcdcdc;
+            box-sizing: border-box;
         }
 
         .sidebar img {
-            width: 240px;
+            width: 250px;
             max-width: 100%;
             border-radius: 12px;
             border: 1px solid #ccc;
@@ -36,30 +38,34 @@
 
         .sidebar h1 {
             color: #003078;
-            margin-bottom: 10px;
-            font-size: 42px;
+            margin: 0 0 10px 0;
+            font-size: 44px;
+            font-weight: normal;
         }
 
         .sidebar p {
             font-size: 17px;
             line-height: 1.6;
+            margin: 12px 0;
+        }
+
+        .sidebar a {
+            color: #003078;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
         }
 
         .social {
             margin-top: 25px;
+            line-height: 2;
         }
 
         .social a {
-            display: inline-block;
-            margin: 8px;
             color: #003078;
-            font-size: 18px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .social a:hover {
-            color: #0055cc;
+            font-size: 16px;
         }
 
         .content {
@@ -70,12 +76,12 @@
 
         nav {
             border-bottom: 2px solid #d0d8e8;
-            padding-bottom: 18px;
+            padding-bottom: 20px;
             margin-bottom: 40px;
         }
 
         nav a {
-            margin-right: 28px;
+            margin-right: 30px;
             text-decoration: none;
             font-weight: 600;
             color: #003078;
@@ -85,7 +91,6 @@
 
         nav a:hover {
             color: #0055cc;
-            transform: scale(1.08);
         }
 
         nav a.active {
@@ -100,12 +105,13 @@
             color: #003078;
             font-size: 32px;
             margin-top: 20px;
+            font-weight: normal;
         }
 
         p,
         li {
             font-size: 18px;
-            line-height: 1.7;
+            line-height: 1.8;
         }
 
         ul {
@@ -173,9 +179,10 @@
             </p>
 
             <div class="social">
+                <a href="#" target="_blank">Google Scholar</a> |
                 <a href="#" target="_blank">ORCID</a><br>
-                <a href="#" target="_blank">Google Scholar</a><br>
-                <a href="#" target="_blank">ResearchGate</a><br>
+
+                <a href="#" target="_blank">ResearchGate</a> |
                 <a href="#" target="_blank">LinkedIn</a>
             </div>
 
@@ -222,36 +229,21 @@
             <h2>Education</h2>
 
             <ul>
-                <li>
-                    Ph.D. in Mathematics,
-                    University of Memphis
-                </li>
+                <li>Ph.D. in Mathematics, University of Memphis</li>
 
-                <li>
-                    M.Sc. in Mathematics,
-                    Indian Institute of Technology Bombay
-                </li>
+                <li>M.Sc. in Mathematics, Indian Institute of Technology Bombay</li>
 
-                <li>
-                    B.Sc. in Mathematics,
-                    University of Delhi
-                </li>
+                <li>B.Sc. in Mathematics, University of Delhi</li>
             </ul>
 
             <h2>Recent News</h2>
 
             <ul>
-                <li>
-                    Ongoing work on numerical index theory and ultraproducts.
-                </li>
+                <li>Ongoing work on numerical index theory and ultraproducts.</li>
 
-                <li>
-                    Ongoing collaboration on algebraic properties of n-potent operators.
-                </li>
+                <li>Ongoing collaboration on algebraic properties of n-potent operators.</li>
 
-                <li>
-                    Faculty advisor for the Math Club at Hampton University.
-                </li>
+                <li>Faculty Advisor for the Math Club at Hampton University.</li>
             </ul>
 
             <footer>
@@ -265,3 +257,4 @@
 </body>
 
 </html>
+```
